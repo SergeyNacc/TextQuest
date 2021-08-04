@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:padding="30dp"
         android:text="@string/death_hero"
-        android:textColor="#530000"
+        android:textColor="#600000"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/button_after_death"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,10 +23,11 @@
 
     <Button
         android:id="@+id/button_after_death"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        style="@style/Button"
         android:text="@string/continue_the_game"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
