@@ -13,8 +13,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // код для начала новой игры и фрагмента
         binding.startBtn.setOnClickListener {
-            // код для начала новой игры
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.start_activity, TextFragment())
+                .commit()
         }
 
         binding.continueBtn.setOnClickListener {

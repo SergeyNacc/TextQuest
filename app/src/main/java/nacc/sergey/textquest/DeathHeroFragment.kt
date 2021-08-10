@@ -24,6 +24,5 @@ class DeathHeroFragment : Fragment() {
         binding.buttonAfterDeath.setOnClickListener {
             //код для возврата в главное меню
         }
-
     }
 }
