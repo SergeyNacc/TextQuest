@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_for_text"
-    tools:context=".TextFragment"
+    tools:context=".IntroFragment"
     android:id="@+id/text_fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,6 +16,7 @@
         android:id="@+id/image_for_plot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         app:layout_constraintBottom_toTopOf="@id/text_plot"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,16 +26,17 @@
         android:id="@+id/text_plot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="30dp"
-        android:textColor="#600000"
-        android:textSize="30sp"
+        android:layout_margin="50dp"
         android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_further"
+        android:padding="30dp"
+        android:textColor="#400000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button_further"
+        android:id="@+id/button_next"
         style="@style/Button"
         android:layout_width="100dp"
         android:layout_height="50dp"

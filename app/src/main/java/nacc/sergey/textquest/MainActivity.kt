@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding.startBtn.setOnClickListener {
             supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.start_activity, TextFragment())
+                .replace(R.id.start_activity, IntroFragment())
                 .commit()
         }
 
