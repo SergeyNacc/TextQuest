@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:padding="30dp"
         android:text="@string/death_hero"
-        android:textColor="#600000"
+        android:textColor="#400000"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/button_after_death"
         app:layout_constraintEnd_toEndOf="parent"
