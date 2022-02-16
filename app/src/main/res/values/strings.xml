@@ -5,4 +5,6 @@
     <string name="continue_the_game">Продолжить</string>
     <string name="death_hero">Умереть в аду! Возможно ли это?..</string>
     <string name="further_text">Далее</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

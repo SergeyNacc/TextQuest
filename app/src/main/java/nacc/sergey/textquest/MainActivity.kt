@@ -14,17 +14,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // код для начала новой игры и фрагмента
-        binding.startBtn.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.start_activity, IntroFragment())
-                .commit()
-        }
-
-        binding.continueBtn.setOnClickListener {
-            //код для продолжения игры
-        }
-
+        supportFragmentManager
+            .beginTransaction()
+            .replace(binding.root.id, BaseFragment())
+            .commit()
     }
 
+    fun launchIntroFragment() {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.start_fragment, IntroFragment())
+            .addToBackStack(null)
+            .commit()
+    }
 }
