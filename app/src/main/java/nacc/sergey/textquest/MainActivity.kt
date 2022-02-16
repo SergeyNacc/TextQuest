@@ -2,29 +2,26 @@ package nacc.sergey.textquest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import nacc.sergey.textquest.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // код для начала новой игры и фрагмента
-        supportFragmentManager
-            .beginTransaction()
-            .replace(binding.root.id, BaseFragment())
-            .commit()
-    }
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment)
 
-    fun launchIntroFragment() {
-        supportFragmentManager
-            .beginTransaction()
-            .replace(R.id.start_fragment, IntroFragment())
-            .addToBackStack(null)
-            .commit()
+        // код для начала новой игры и фрагмента
+//        supportFragmentManager
+//            .beginTransaction()
+//            .replace(binding.root.id, BaseFragment())
+//            .commit()
     }
 }

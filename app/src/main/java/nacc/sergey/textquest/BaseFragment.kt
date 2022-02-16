@@ -33,5 +33,6 @@ class BaseFragment : Fragment() {
     }
 
     private fun startNewGame() {
+        (activity as MainActivity).navController.navigate(R.id.action_baseFragment_to_introFragment)
     }
 }

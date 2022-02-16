@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.fragment_intro.*
 import nacc.sergey.textquest.databinding.FragmentIntroBinding
 
 
-class IntroFragment : Fragment(R.id.intro_fragment) {
+class IntroFragment : Fragment(R.id.part_one_fragment) {
 
     private lateinit var binding: FragmentIntroBinding
 

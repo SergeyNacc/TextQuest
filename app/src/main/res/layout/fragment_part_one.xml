@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_for_text"
     tools:context=".IntroFragment"
-    android:id="@+id/intro_fragment">
+    android:id="@+id/part_one_fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

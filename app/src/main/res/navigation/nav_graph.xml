@@ -26,5 +26,6 @@
     <fragment
         android:id="@+id/partOneFragment"
         android:name="nacc.sergey.textquest.PartOneFragment"
-        android:label="PartOneFragment" />
+        android:label="fragment_part_one"
+        tools:layout="@layout/fragment_part_one"/>
 </navigation>

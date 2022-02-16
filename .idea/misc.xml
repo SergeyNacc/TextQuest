@@ -3,15 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/activity_main.xml" value="0.12545289855072464" />
-        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_base.xml" value="0.4531791907514451" />
-        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_deathhero.xml" value="0.12545289855072464" />
-        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_intro.xml" value="0.16" />
-        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_part_one.xml" value="0.20416666666666666" />
+        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/activity_main.xml" value="0.12409420289855072" />
+        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_base.xml" value="0.20199275362318841" />
+        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_intro.xml" value="0.20199275362318841" />
+        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_part_one.xml" value="0.20199275362318841" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
