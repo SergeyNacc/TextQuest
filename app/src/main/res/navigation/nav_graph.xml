@@ -27,5 +27,14 @@
         android:id="@+id/partOneFragment"
         android:name="nacc.sergey.textquest.PartOneFragment"
         android:label="fragment_part_one"
-        tools:layout="@layout/fragment_part_one"/>
+        tools:layout="@layout/fragment_part_one">
+        <action
+            android:id="@+id/action_partOneFragment_to_battleFragment"
+            app:destination="@id/battleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/battleFragment"
+        android:name="nacc.sergey.textquest.BattleFragment"
+        android:label="fragment_battle"
+        tools:layout="@layout/fragment_battle" />
 </navigation>

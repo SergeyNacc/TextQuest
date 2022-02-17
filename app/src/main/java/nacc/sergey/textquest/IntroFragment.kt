@@ -5,11 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.fragment_intro.*
 import nacc.sergey.textquest.databinding.FragmentIntroBinding
 
 
-class IntroFragment : Fragment(R.id.part_one_fragment) {
+class IntroFragment : Fragment() {
 
     private lateinit var binding: FragmentIntroBinding
 
@@ -20,7 +19,7 @@ class IntroFragment : Fragment(R.id.part_one_fragment) {
         (R.string.intro9)
     )
 
-    private var currentIndex = 0
+    private var counter = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -35,18 +34,18 @@ class IntroFragment : Fragment(R.id.part_one_fragment) {
         updateText()
 
         binding.buttonNext.setOnClickListener {
-            currentIndex = (currentIndex + 1) % textIntroList.size
-            updateText()
-            if (currentIndex >= textIntroList.size) {
+            if (counter >= textIntroList.size - 1) {
+                (activity as MainActivity)
+                    .navController.navigate(R.id.action_introFragment_to_partOneFragment)
+            } else {
+                counter += 1
+                updateText()
             }
-
-            // как только массив заканчивается,
-            // нужен код для вызова следующего фрагмента
         }
     }
 
     private fun updateText() {
-        val textId = textIntroList[currentIndex]
+        val textId = textIntroList[counter]
         binding.textPlot.setText(textId)
     }
 

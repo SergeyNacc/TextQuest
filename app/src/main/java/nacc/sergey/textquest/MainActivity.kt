@@ -17,11 +17,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         navController = Navigation.findNavController(this, R.id.nav_host_fragment)
-
-        // код для начала новой игры и фрагмента
-//        supportFragmentManager
-//            .beginTransaction()
-//            .replace(binding.root.id, BaseFragment())
-//            .commit()
     }
 }
