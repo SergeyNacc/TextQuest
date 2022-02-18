@@ -13,9 +13,14 @@ class IntroFragment : Fragment() {
     private lateinit var binding: FragmentIntroBinding
 
     private val textIntroList = listOf(
-        (R.string.intro1), (R.string.intro2),
-        (R.string.intro3), (R.string.intro4), (R.string.intro5),
-        (R.string.intro6), (R.string.intro7), (R.string.intro8),
+        (R.string.intro1),
+        (R.string.intro2),
+        (R.string.intro3),
+        (R.string.intro4),
+        (R.string.intro5),
+        (R.string.intro6),
+        (R.string.intro7),
+        (R.string.intro8),
         (R.string.intro9)
     )
 
@@ -34,7 +39,7 @@ class IntroFragment : Fragment() {
         updateText()
 
         binding.buttonNext.setOnClickListener {
-            if (counter >= textIntroList.size - 1) {
+            if (counter == 8) {
                 (activity as MainActivity)
                     .navController.navigate(R.id.action_introFragment_to_partOneFragment)
             } else {

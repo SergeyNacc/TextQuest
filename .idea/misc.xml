@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/drawable-v24/for_images.xml" value="0.2203125" />
         <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/activity_main.xml" value="0.12409420289855072" />
         <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_base.xml" value="0.20199275362318841" />
         <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_battle.xml" value="0.19791666666666666" />
-        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_intro.xml" value="0.20199275362318841" />
-        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_part_one.xml" value="0.33" />
+        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_intro.xml" value="0.2" />
+        <entry key="..\:/Workspace/AndroidStudioProjects/TextQuest/app/src/main/res/layout/fragment_part_one.xml" value="0.18" />
       </map>
     </option>
   </component>

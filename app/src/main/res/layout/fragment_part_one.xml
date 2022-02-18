@@ -40,7 +40,7 @@
             style="@style/Button"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="30dp"
             android:text="@string/further_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
