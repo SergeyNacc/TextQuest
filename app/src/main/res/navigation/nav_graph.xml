@@ -31,10 +31,21 @@
         <action
             android:id="@+id/action_partOneFragment_to_battleFragment"
             app:destination="@id/battleFragment" />
+        <action
+            android:id="@+id/action_partOneFragment_to_partTwoFragment"
+            app:destination="@id/partTwoFragment" />
     </fragment>
     <fragment
         android:id="@+id/battleFragment"
         android:name="nacc.sergey.textquest.battle.BattleFragment"
         android:label="fragment_battle"
         tools:layout="@layout/fragment_battle" />
+    <fragment
+        android:id="@+id/partTwoFragment"
+        android:name="nacc.sergey.textquest.plotfragments.PartTwoFragment"
+        android:label="PartTwoFragment" >
+        <action
+            android:id="@+id/action_partTwoFragment_to_battleFragment"
+            app:destination="@id/battleFragment" />
+    </fragment>
 </navigation>

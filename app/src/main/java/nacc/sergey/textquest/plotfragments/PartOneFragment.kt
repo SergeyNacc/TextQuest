@@ -69,7 +69,7 @@ class PartOneFragment : Fragment() {
                 }
                 26 -> {
                     (activity as MainActivity)
-                    //.navController.navigate(R.id. !сдесь будет экшн на PartTwoFragment!)
+                    .navController.navigate(R.id.action_partOneFragment_to_partTwoFragment)
                 }
                 else -> {
                     counter += 1
