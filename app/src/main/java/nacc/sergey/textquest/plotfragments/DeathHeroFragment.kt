@@ -1,4 +1,4 @@
-package nacc.sergey.textquest
+package nacc.sergey.textquest.plotfragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

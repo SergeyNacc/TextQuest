@@ -1,10 +1,12 @@
-package nacc.sergey.textquest
+package nacc.sergey.textquest.plotfragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import nacc.sergey.textquest.MainActivity
+import nacc.sergey.textquest.R
 import nacc.sergey.textquest.databinding.FragmentIntroBinding
 
 
@@ -52,6 +54,9 @@ class IntroFragment : Fragment() {
     private fun updateText() {
         val textId = textIntroList[counter]
         binding.textPlot.setText(textId)
+        if (counter > 0) {
+            binding.imageForPlot.visibility = View.GONE
+        }
     }
 
 }

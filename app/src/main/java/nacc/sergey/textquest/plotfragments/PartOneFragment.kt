@@ -1,12 +1,12 @@
-package nacc.sergey.textquest
+package nacc.sergey.textquest.plotfragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.*
 import android.view.ViewGroup
-import androidx.core.view.isVisible
+import nacc.sergey.textquest.MainActivity
+import nacc.sergey.textquest.R
 import nacc.sergey.textquest.databinding.FragmentPartOneBinding
 
 class PartOneFragment : Fragment() {
@@ -59,11 +59,7 @@ class PartOneFragment : Fragment() {
         updateText()
 
         binding.buttonNext.setOnClickListener {
-
-            if (counter >= 0) {
-            }
-
-            when (counter ) {
+            when (counter) {
                 16 -> {
                     //запустить бой сразу или забать вопрос - драться или нет
                     //осуществить выход из боя с сохранением
@@ -86,5 +82,8 @@ class PartOneFragment : Fragment() {
     private fun updateText() {
         val textId = textPartOneList[counter]
         binding.textPlot.setText(textId)
+        if (counter > 0) {
+            binding.imageForPlot.visibility = View.GONE
+        }
     }
 }

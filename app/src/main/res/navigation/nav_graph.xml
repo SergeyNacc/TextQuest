@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/introFragment"
-        android:name="nacc.sergey.textquest.IntroFragment"
+        android:name="nacc.sergey.textquest.plotfragments.IntroFragment"
         android:label="fragment_intro"
         tools:layout="@layout/fragment_intro" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/partOneFragment"
-        android:name="nacc.sergey.textquest.PartOneFragment"
+        android:name="nacc.sergey.textquest.plotfragments.PartOneFragment"
         android:label="fragment_part_one"
         tools:layout="@layout/fragment_part_one">
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/battleFragment"
-        android:name="nacc.sergey.textquest.BattleFragment"
+        android:name="nacc.sergey.textquest.battle.BattleFragment"
         android:label="fragment_battle"
         tools:layout="@layout/fragment_battle" />
 </navigation>
